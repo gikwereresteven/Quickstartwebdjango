@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>MyfirstDjango</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/quickstart.css' %}">
+  <link href="{{ STATIC_URL }}css/quickstart.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+            <nav class="hello">
+                    <i class='fas fa-home' style='font-size:48px;color:red'></i>
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                             <a class="navbar-brand" href="#">
+                                    {% load static %}
+                                    <img src="{% static "quickstart\logo.png" %}" alt="My image" style="width:40px">
+                            
+                            </a>  
+                <ul class="nav navbar-nav navbar">
+                        
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">PROPERTIES</a></li>
+                            <li><a href="#">MATERIALS</a></li>
+                            
+                          </ul>
+                        </li>
+                        
+                        <li><a href="#">CONTACT US</a></li>
+                     
+                      </ul>
+                        {% load static %}
+
+                      <div class="wrap">
+                            <div class="search">
+                               <input type="text" class="searchTerm" placeholder="search">
+                               <button type="submit" class="searchButton">
+                                 <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                         </div>
+                  </nav>
+                  
+    </body>
+</html>
